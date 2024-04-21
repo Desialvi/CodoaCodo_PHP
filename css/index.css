@@ -1,0 +1,17 @@
+.contenedor-imagen{
+    background-image: url("../images/man-watching-show-his-tv.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 90vh; 
+    width: 100%;
+}
+
+.contenedor-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
