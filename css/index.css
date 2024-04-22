@@ -1,5 +1,6 @@
 .contenedor-imagen{
     background-image: url("../images/man-watching-show-his-tv.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -10,8 +11,34 @@
 
 .contenedor-p {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    font-size: 55px;
+    color: white;
+    text-shadow: 1px 1px #fff;
+  }
+
+  .contenedor-p2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 35px;
+    color: rgb(179, 176, 176)
+  }
+
+  .button_r {
+    position: absolute;
+    color:#fff;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 5px;
+  background-color: #007bff; 
+  
+    
   }
