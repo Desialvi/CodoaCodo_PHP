@@ -26,9 +26,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#Tendencias Imperdibles">Tendencias</a>
-                <a class="nav-link" href="./Registro.html">Registrarse</a>
-                <a class="nav-link" href="#">Iniciar Sesion</a>
+                <a class="nav-link active" aria-current="page" href="/">Tendencias</a>
+                <a class="nav-link" href="#">Registrarse</a>
+                <a class="nav-link" href="./inicio_sesion.html">Iniciar Sesion</a>
                 
               </div>
             </div>
@@ -45,30 +45,30 @@
                             <div class="card m-2 register-form" style="border-radius: 20px; opacity: 0.8;">
                                 <div class="card-body p-4">
                                     <h2 class="text-uppercase text-center mb-2">¡Regístrate!</h2>
-                                    <form>
+                                    <form id="registro" novalidate>
                                         <div class="form-outline mb-3">
-                                            <input type="text" class="form-control form-control-lg" placeholder="Nombre"/>
-                                            <div class="error-text"></div>
+                                            <input type="text" class="form-control form-control-lg" placeholder="Nombre" id="nombre"/>
+                                            <div class="error-text" id="errornombre"></div>
                                         </div>
 
                                         <div class="form-outline mb-3">
-                                            <input type="text" class="form-control form-control-lg" placeholder="Apellido"/>
-                                            <div class="error-text"></div>
+                                            <input type="text" class="form-control form-control-lg" placeholder="Apellido" id="apellido"/>
+                                            <div class="error-text" id="errorapellido"></div>
                                         </div>
 
                                         <div class="form-outline mb-3">
-                                            <input type="date" class="form-control form-control-lg" placeholder="Fecha de Nacimiento (dd/mm/aaaa)"  id="fechaNacimiento" name="fechaNacimiento" >
-                                            <div class="error-text"></div>
+                                            <input type="date" class="form-control form-control-lg" placeholder="Fecha de Nacimiento (dd/mm/aaaa)"  id="fechaNacimiento" name="fechaNacimiento" id="fecha" >
+                                            <div class="error-text" id="errorfecha"></div>
                                         </div>
 
                                         <div class="form-outline mb-3">
-                                            <input type="email" class="form-control form-control-lg" placeholder="Email"/>
-                                            <div class="error-text"></div>
+                                            <input type="email" class="form-control form-control-lg" placeholder="Email" id="email"/>
+                                            <div class="error-text" id="erroremail"></div>
                                         </div>
 
                                         <div class="form-outline mb-3">
-                                            <input type="password" class="form-control form-control-lg" placeholder="Contraseña"/>
-                                            <div class="error-text"></div>
+                                            <input type="password" class="form-control form-control-lg" placeholder="Contraseña" id="password"/>
+                                            <div class="error-text" id="errorpassword"></div>
                                         </div>
 
                                       
@@ -86,7 +86,7 @@
                                                     <option value="UY">Uruguay</option>
                                                     <option value="VE">Venezuela</option>
                                                 </select>
-                                                <div class="error-text"></div>
+                                                <div class="error-text" id="errorpais"></div>
                                             </div>
                                         </div>
 
@@ -98,7 +98,7 @@
                                         </div>
 
                                         <div class="d-flex justify-content-center">
-                                        <button type="button"
+                                        <button type="submit"
                                             class="btn btn-primary btn-block btn-lg gradient-custom-4 text-white">Registrarse</button>
                                         </div>
 
@@ -197,6 +197,6 @@
       <script>
           AOS.init();
       </script>
-    
+    <script src="./js/register.js">  </script>
 </body>
 </html>
