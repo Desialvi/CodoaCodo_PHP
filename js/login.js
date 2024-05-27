@@ -53,7 +53,7 @@ function validForm() {
 
         if (isValidLogin){
             alert("Acceso exitoso")
-            window.location.href = '/';
+            window.location.href = './';
         }
 }
 

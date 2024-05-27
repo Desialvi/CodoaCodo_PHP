@@ -96,7 +96,7 @@ function validForm(submit=false) {
     if (isValidRegistration){
         if(submit){
             alert(`Hola ${nombre}! Registro Exitoso`)
-            window.location.href = '/inicio_sesion.html';
+            window.location.href = './inicio_sesion.html';
         }
     }
 }
